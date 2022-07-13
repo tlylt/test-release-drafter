@@ -48,11 +48,12 @@ template: |
   <!-- Any other changes -->
 
   $CHANGES
-
+change-template: "* $TITLE (#$NUMBER)"
+category-template: "### $TITLE"
 categories:
-  - title: '### Documentation'
+  - title: 'Documentation'
     label: 'a-Documentation 📝'
-  - title: '### Code Quality'
+  - title: 'Code Quality'
     labels:
       - 'a-CodeQuality'
       - 'bugfix'
