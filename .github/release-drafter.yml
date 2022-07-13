@@ -57,3 +57,15 @@ categories:
       - 'a-CodeQuality'
       - 'bugfix'
       - 'bug'
+version-resolver:
+  major:
+    labels:
+      - 'major'
+  minor:
+    labels:
+      - 'minor'
+  patch:
+    labels:
+      - 'patch'
+  default: patch
+name-template: v$RESOLVED_VERSION
