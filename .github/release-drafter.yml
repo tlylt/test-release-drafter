@@ -48,3 +48,12 @@ template: |
   <!-- Any other changes -->
 
   $CHANGES
+
+categories:
+  - title: '### Documentation'
+    label: 'a-Documentation 📝'
+  - title: '### Code Quality'
+    labels:
+      - 'a-CodeQuality'
+      - 'bugfix'
+      - 'bug'
