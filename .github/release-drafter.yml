@@ -6,31 +6,35 @@ template: |
 
   ## Other Changes
 
-  ### Miscellaneous
-
-  <!-- Any other changes -->
+  <!-- Move the items below into the respective categories -->
+  <!-- Then move the categories into the right headings -->
 
   $CHANGES
 tag-template: 'v$RESOLVED_VERSION'
 change-template: "* $TITLE (#$NUMBER)"
 category-template: "### $TITLE"
 categories:
+  - title: 'Breaking changes'
+  - title: 'Features'
+  - title: 'Enhancements'
+  - title: 'Fixes'
   - title: 'Documentation'
     label: 'a-Documentation 📝'
   - title: 'Code Quality'
     labels:
       - 'a-CodeQuality'
-      - 'bugfix'
-      - 'bug'
+  - title: 'DevOps Changes'
+  - title: 'Dependencies'
+  - title: 'Miscellaneous'
 version-resolver:
   major:
     labels:
-      - 'major'
+      - 'r.major'
   minor:
     labels:
-      - 'minor'
+      - 'r.minor'
   patch:
     labels:
-      - 'patch'
+      - 'r.patch'
   default: patch
 name-template: v$RESOLVED_VERSION
